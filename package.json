@@ -1,0 +1,17 @@
+{
+  "name": "jonro-discordjs",
+  "version": "0.0.0",
+  "description": "discord bot",
+  "main": "main.js",
+  "dependencies": {
+    "add": "^2.0.6",
+    "bot-framework": "github:acrylic-style/bot-framework",
+    "discord.js": "^12.1.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node main.js",
+    "test": "node main.js"
+  }
+}
