@@ -15,7 +15,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if(msg.bot || msg.system) return;
-  dispatcher(msg, require('./lang/ja.json'), prefix, '460208854362357770', prefix)
+  dispatcher(msg, require('./lang/ja.json'), prefix, '460208854362357770', prefix, client)
 });
 
 let joined = 0;
