@@ -10,11 +10,11 @@ const lang = require('./lang/en.json')
 let prefix = 's!';
 
 client.on('ready', () => {
-	console.log('bot is ready!');
+  console.log('bot is ready!');
 });
 
 client.on('message', msg => {
-	if(msg.bot || msg.system) return;
+  if(msg.bot || msg.system) return;
   dispatcher(msg, require('./lang/ja.json'), prefix, '460208854362357770', prefix)
 });
 
