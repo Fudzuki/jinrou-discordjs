@@ -12,7 +12,7 @@ module.exports = class extends Command {
   constructor(){
     super('start', { allowedIn: ['TextChannel'] })
   }
-  async run(msg, lang, args, sendDeletable){
+  async run(msg, lang, args, client, sendDeletable){
     if(!msg.member.roles.cache.has('626705321443852298')) return msg.channel.send('管理者コマンドです');
     if(GameMaster.status == 1) return sendDeletable('ゲームは既に開始されています')
     GameMaster.status = 1;
